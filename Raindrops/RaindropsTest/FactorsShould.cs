@@ -19,5 +19,12 @@ namespace RaindropsTest
         {
             Assert.That(Program.Factors(n), Is.EqualTo(expected));
         }
+
+        [TestCase(10, "Plang")]
+        [TestCase(30, "Plang")]
+        public void GivenNumberNHasFactorOf5_ReturnStringPlang(int n, string expected)
+        {
+            Assert.That(Program.Factors(n), Is.EqualTo(expected));
+        }
     }
 }

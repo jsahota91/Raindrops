@@ -14,7 +14,10 @@ namespace Raindrops
             if (n % 7 == 0)
             {
                 return "Plong";
-            } 
+            } else if (n % 5 == 0)
+            {
+                return "Plang";
+            }
             else return n.ToString();
         }
     }

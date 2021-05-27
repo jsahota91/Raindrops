@@ -5,7 +5,6 @@ namespace RaindropsTest
 {
     public class FactorsShould
     {
-
         [TestCase(28, "Plong")]
         [TestCase(42, "Plong")]
         public void GivenNumberNHasAFactorOf7_ReturnStringPlong(int n, string expected)
@@ -26,5 +25,12 @@ namespace RaindropsTest
         {
             Assert.That(Program.Factors(n), Is.EqualTo(expected));
         }
+
+        [TestCase(12, "Pling")]
+        [TestCase(9, "Pling")]
+        public void GivenNumberNHasFactorOf3_ReturnStringPling(int n, string expected)
+        {
+            Assert.That(Program.Factors(n), Is.EqualTo(expected));
+        }        
     }
 }

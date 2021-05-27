@@ -31,6 +31,20 @@ namespace RaindropsTest
         public void GivenNumberNHasFactorOf3_ReturnStringPling(int n, string expected)
         {
             Assert.That(Program.Factors(n), Is.EqualTo(expected));
-        }        
+        }
+
+        [TestCase(15, "PlingPlang")]
+        [TestCase(30, "PlingPlang")]
+        public void GivenNumberNHasFactorOf3and5_ReturnStringPlingPlang(int n, string expected)
+        {
+            Assert.That(Program.Factors(n), Is.EqualTo(expected));
+        }
+
+        [TestCase(21, "PlingPlong")]
+        [TestCase(42, "PlingPlong")]
+        public void GivenNumberNHasFactorOf3and7_ReturnStringPlingPlong(int n, string expected)
+        {
+            Assert.That(Program.Factors(n), Is.EqualTo(expected));
+        }
     }
 }

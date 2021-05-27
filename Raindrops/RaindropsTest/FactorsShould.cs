@@ -46,5 +46,12 @@ namespace RaindropsTest
         {
             Assert.That(Program.Factors(n), Is.EqualTo(expected));
         }
+
+        [TestCase(35, "PlangPlong")]
+        [TestCase(70, "PlangPlong")]
+        public void GivenNumberNHasFactorOf3and7_ReturnStringPlangPlong(int n, string expected)
+        {
+            Assert.That(Program.Factors(n), Is.EqualTo(expected));
+        }
     }
 }

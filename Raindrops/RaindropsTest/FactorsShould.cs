@@ -8,11 +8,16 @@ namespace RaindropsTest
 
         [TestCase(28, "Plong")]
         [TestCase(42, "Plong")]
-        public void GivenNumbernHasAFactorOf7_ReturnStringPlong(int n, string expected)
+        public void GivenNumberNHasAFactorOf7_ReturnStringPlong(int n, string expected)
         {
             Assert.That(Program.Factors(n), Is.EqualTo(expected));
         }
 
-        
+        [TestCase(23, "23")]
+        [TestCase(34, "34")]
+        public void GivenNumberNHasNoneOfTheFactors_ReturnNumberN(int n, string expected)
+        {
+            Assert.That(Program.Factors(n), Is.EqualTo(expected));
+        }
     }
 }

@@ -9,6 +9,9 @@ namespace Raindrops
             Console.WriteLine(FactorResults(28));
             Console.WriteLine(FactorResults(30));
             Console.WriteLine(FactorResults(34));
+            Console.WriteLine(FactorResults(70));
+            Console.WriteLine(FactorResults(42));
+            Console.WriteLine(FactorResults(210));
         }
 
         public static string FactorResults(int n)
